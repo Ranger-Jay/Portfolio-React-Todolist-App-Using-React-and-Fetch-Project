@@ -5,7 +5,7 @@ export const Input = () => {
   const [list, addToList] = useState([]);
 
   const url =
-    "https://assets.breatheco.de/apis/fake/todos/user/TheRhettThompson";
+    "https://assets.breatheco.de/apis/fake/todos/user/Ranger-Jay";
 
   useEffect(() => {
     function getFetch() {
