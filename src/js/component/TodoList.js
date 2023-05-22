@@ -5,7 +5,7 @@ const TodoList = () => {
     const [todos, setTodos] = useState([]);
 
     useEffect(() => {
-        fetch("https://assets.breatheco.de/apis/fake/todos/user/moncherry369", {
+        fetch("https://assets.breatheco.de/apis/fake/todos/user/Ranger-Jay", {
             method:"GET"
         })
         .then((response) => response.json())
@@ -23,7 +23,7 @@ const addTask = (e) => {
 
     todos.push(task)
 
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/moncherry369", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/Ranger-Jay", {
         method:"PUT",
         body:JSON.stringify(todos),
         headers:{
@@ -44,7 +44,7 @@ let filtered = todos.filter((todo, index) => {
 })
 
 
-fetch("https://assets.breatheco.de/apis/fake/todos/user/moncherry369", {
+fetch("https://assets.breatheco.de/apis/fake/todos/user/Ranger-Jay", {
         method:"PUT",
         body:JSON.stringify(filtered),
         headers:{
@@ -60,7 +60,7 @@ fetch("https://assets.breatheco.de/apis/fake/todos/user/moncherry369", {
 }
 
 const handleDeleteAll = () => {
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/moncherry369", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/Ranger-Jay", {
         method:"DELETE",
         headers:{
             "Content-Type" : "application/json"
